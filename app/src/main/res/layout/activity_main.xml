@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    tools:context="com.example.viserion.currencyconverter.MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+       android:id="@+id/CurrencyImage"
+       android:background="@drawable/currency"
+       android:layout_marginBottom="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="163dp" />
+
+    <EditText
+        android:id="@+id/Input"
+        android:hint="@string/HintText"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/From"
+        android:text="@string/HintMessage"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/ConvertFrom"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/To"
+        android:text="@string/HintMessage2"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/ConvertTo"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
